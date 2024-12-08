@@ -1,0 +1,70 @@
+h1{
+    font-family: sans-serif;
+    position: relative;
+    left: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+input{
+    position: relative;
+    left: 10px;
+    top: 30px;
+    width: 500px;
+    font-size: larger;
+    color: black;
+}
+#text{
+    position: relative;
+    right: 588px;
+    top: 150px;
+    width: 500px;
+    font-size: larger;
+    color: black;
+}
+#first{
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+    font-family: sans-serif;
+}
+#second{
+    position: relative;
+    right: 507px;
+    top: 90px;
+    font-family: sans-serif;
+}
+
+#btn1{
+    cursor: pointer;
+    position: relative;
+    right: 1105px;
+    top: 190px;
+
+    background-color: #006BFF;
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 100px;
+    font-size:  13px;
+    border-radius: 3px;
+    font-weight: bolder;
+    color: white;
+}
+#btn2{
+    cursor: pointer;
+    position: relative;
+    right: 1080px;
+    top: 191px;
+
+    background-color: grey;
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 100px;
+    font-size:  13px;
+    border-radius: 3px;
+    font-weight: bolder;
+   
+}

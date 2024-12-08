@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <h1>  Welcome <%= user.username %> </h1>
+<button id="btn4"><a href="/compose">New Article</a></button>
+<button id="btn5"><a href="/logout">logout</a></button>
+<% posts.forEach(post => {%>
+    <div id="form">
+    <h2> <%= post.title.substring(0, 30) %>..</h2>
+    <p><%= post.content.substring(0, 70) %>... </p>
+    <button id="btn1"><a href="/post/<%= post.id %>">Read More</a></button>
+    <%if(post.author === user.username){%>
+        <button id="btn2"><a href="/edit/<%= post.id %>">Edit</a></button>
+    <form action="/delete/<%= post.id %>" method="post">
+        <button id="btn3" type="submit">Delete</button>
+    </form>
+    <%}%>
+    </div>
+<%})%>
+</body>
+</html>
